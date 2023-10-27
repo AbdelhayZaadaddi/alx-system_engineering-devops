@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Show all form
+ps -auxf
