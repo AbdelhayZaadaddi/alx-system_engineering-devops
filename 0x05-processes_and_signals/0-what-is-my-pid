@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script displays its own PID
+
+echo $$
