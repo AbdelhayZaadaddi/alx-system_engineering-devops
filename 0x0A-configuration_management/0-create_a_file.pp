@@ -1,4 +1,4 @@
-# 0-create_a_file.pp in /tmp
+# create file in /temp
 
 file { '/tmp/school':
   ensure => 'file,
