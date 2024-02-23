@@ -1,9 +1,9 @@
-# create file in /temp
+# create file in temp puppet
 
 file { '/tmp/school':
-  ensure => 'file,
-  mode => '0744',
-  owner => 'www-data',
-  group => 'www-data',
+  ensure  => 'file',
   content => 'I love Puppet',
+  mode    => '0744',
+  owner   => 'www-data',
+  group   => 'www-data',
 }
