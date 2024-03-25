@@ -7,6 +7,7 @@ Python script that, using this REST API, for a given employee ID, returns inform
 from sys import argv
 from requests import get
 
+
 if __name__ == "__main__":
     read = get('https://jsonplaceholder.typicode.com/todos/')
     data = read.json()
@@ -27,9 +28,8 @@ if __name__ == "__main__":
             if user.get('completed') is True:
                 tasks_done += 1
                 tasks.append(user.get('title'))
-            
-    print(f"Employee {argv[1]} is done with tasks({tasks_done}/{all_tasks}):")
+
+    print(f"Employee {employee_name} is done with tasks({tasks_done}/{all_tasks}):")
 
     for task in tasks:
         print("\t {}".format(task))
-
