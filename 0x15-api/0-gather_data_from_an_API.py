@@ -8,12 +8,12 @@ from sys import argv
 from requests import get
 
 if __name__ == "__main__":
-    read = get('https://jsonplaceholder.typicode.com/todos/')
+    read = get('https://jsonplaceholder.typicode.com/todos')
     data = read.json()
     tasks = []
     tasks_done = 0
     all_tasks = 0
-    read = get('https://jsonplaceholder.typicode.com/users/')
+    read = get('https://jsonplaceholder.typicode.com/users')
     data_user = read.json()
 
     for user in data_user:
