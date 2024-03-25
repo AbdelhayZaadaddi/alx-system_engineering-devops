@@ -17,6 +17,10 @@ if __name__ == "__main__":
     data_user = read.json()
 
     for user in data_user:
+        if user.get('id') == int(argv[1]):
+            employee_name = user.get('name')
+
+    for user in data_user:
         if user.get('userId') == int(argv[1]):
             all_tasks += 1
 
